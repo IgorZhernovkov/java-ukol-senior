@@ -1,0 +1,7 @@
+There are 3 type of entities in my project: JavaScriptFramework, FrameworkVersion, HypeLevel.
+I have implemented HypeLevel as Entity for more advanced searching (for example - by level's score) and dynamicly appending new records into it. For static data of HypeLevel I can use Enum type. Relation between JavaScriptFrameWork  and HypeLevel is ManyToOne: i consider that one JavascriptFramework can be contain only one level. 
+Entity FrameworkVersion consists of 3 fields: ID, version's name and version's release date. Relation between JavaScriptFramework and FrameworkVersion is OneToMany. I think there isn't need for the using ManyToMany relation, and consider it as dependent entity. 
+I have tried to use generic classes on controller, service and dao layers. 
+For DAO layer I used Spring Data repositories.
+I have realized creating dynamic filter's queries for searching data using reflection. Searching supports paging and sort by one field of entity.
+For deploying database's DDLs I used Liquibase.
