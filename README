@@ -5,3 +5,4 @@ I have tried to use generic classes on controller, service and dao layers.
 For DAO layer I used Spring Data repositories.
 I have realized creating dynamic filter's queries for searching data using reflection. Searching supports paging and sort by one field of entity.
 For deploying database's DDLs I used Liquibase.
+For describing REST methods I added Swagger2 (for local using - http://localhost:8080/swagger-ui.html)
